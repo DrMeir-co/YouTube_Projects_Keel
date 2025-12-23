@@ -1,4 +1,4 @@
-# Juicy_Tool_Name — does very cool stuff!
+# Keel — Investing Strategies Simulator
 
 Requirements: Python 3.8+
 
@@ -14,5 +14,5 @@ pre-commit install
 Learn how to use:
 
 ```bash
-juicy_tool_name --help
+keel --help
 ```

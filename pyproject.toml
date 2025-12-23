@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "keel"
 version = "0.0.0"
-description = "investment policies simulator"
+description = "investing strategies simulator"
 requires-python = ">=3.8"
 dependencies = ["typer"]
 
@@ -19,7 +19,7 @@ dev = [
 ]
 
 [project.scripts]
-juicy_tool_name = "juicy_tool_name.cli:app"
+keel = "keel.cli:app"
 
 [tool.setuptools.package-dir]
 "" = "src"
