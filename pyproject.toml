@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "keel"
+version = "0.0.0"
+description = "investment policies simulator"
+requires-python = ">=3.8"
+dependencies = ["typer"]
+
+[dependency-groups]
+dev = [
+    "ruff",
+    "ty",
+    "pytest",
+    "pytest-cov",
+    "pre-commit",
+]
+
+[project.scripts]
+juicy_tool_name = "juicy_tool_name.cli:app"
+
+[tool.setuptools.package-dir]
+"" = "src"
+
+[tool.setuptools.packages.find]
+where = ["src"]

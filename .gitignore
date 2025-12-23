@@ -1,0 +1,16 @@
+# Byte-compiled / optimized files
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+.venv/
+
+# Package metadata (egg-info created during local builds)
+*.egg-info/
+
+# Test cache
+.pytest_cache/
+
+# OS files
+.DS_Store
+Thumbs.db
