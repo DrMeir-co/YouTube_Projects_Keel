@@ -1,0 +1,9 @@
+Refactor CLI and ticker data fetching
+
+- Add logging infrastructure with error handler to record failures
+- Replace simple 'foo' command with 'fetch' command for retrieving ticker data
+- Refactor get_ticker_data() to accept source parameter (currently supports "stooq")
+- Extract fetch_from_stooq() as separate function for data retrieval
+- Add validate_ticker_df() to ensure DataFrame has required columns
+- Improve error handling with specific exception types (HTTPError, URLError, etc.)
+- Remove obsolete test file

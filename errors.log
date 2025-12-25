@@ -1,0 +1,28 @@
+================================================================================
+2025-12-25 18:31:32
+================================================================================
+ERROR: Error fetching data for aapll.US from Stooq
+Traceback (most recent call last):
+  File "D:\Dropbox\Parnasa\DrMeir\YouTube Projects\YouTube_Projects_Keel\src\keel\cli.py", line 29, in fetch
+    df = get_ticker_data(source, ticker, country)
+    country = 'US'
+    msg = 'Error fetching data for aapll.US from Stooq'
+    source = 'stooq'
+    ticker = 'aapll'
+  File "D:\Dropbox\Parnasa\DrMeir\YouTube Projects\YouTube_Projects_Keel\src\keel\ticker.py", line 64, in get_ticker_data
+    validate_ticker_df(df)
+    ~~~~~~~~~~~~~~~~~~^^^^
+    country = 'US'
+    df = Empty DataFrame
+Columns: [No data]
+Index: []
+    source = 'stooq'
+    symbol = 'aapll.US'
+    ticker = 'aapll'
+  File "D:\Dropbox\Parnasa\DrMeir\YouTube Projects\YouTube_Projects_Keel\src\keel\ticker.py", line 27, in validate_ticker_df
+    raise ValueError("Received an empty DataFrame")
+    df = Empty DataFrame
+Columns: [No data]
+Index: []
+ValueError: Received an empty DataFrame
+
